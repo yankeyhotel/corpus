@@ -1,0 +1,18 @@
+sidebar-width = 300px
+
+.sidebar
+  width sidebar-width
+  +below('m')
+    height auto
+    width 100%
+
+  // If sidebar exists, offset <main> by it's width
+  + main
+    margin-left @width
+    +below('m')
+      margin-left 0
+
+  &.fixed,
+  &.absolute
+    +below('m')
+      position static

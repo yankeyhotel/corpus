@@ -1,0 +1,65 @@
+//====================================================
+//  Sizing
+//====================================================
+
+.fullscreen
+  min-height 100vh
+  min-width 100%
+
+//====================================================
+//  Flex Sizing
+//====================================================
+
+.flex1
+  flex 1
+.flex2
+  flex 2
+.flex3
+  flex 3
+.flex4
+  flex 4
+.flex5
+  flex 5
+
+//====================================================
+//  Width
+//====================================================
+
+.w-auto
+  width auto !important
+.w-inherit
+  width inherit !important
+.w-initial
+  width initial !important
+
+for i in 0..20
+  // Viewport-based width
+  .vw{i*5}
+    width multiply(i, 5vw)
+  // Percentage-based width
+  .w{i*5}
+    width multiply(i, 5%)
+  .max-w{i*5}
+    max-width multiply(i, 5%)
+  .min-w{i*5}
+    min-width multiply(i, 5%)
+
+
+//====================================================
+//  Height
+//====================================================
+
+.h-auto
+  height auto !important
+.h-inherit
+  height inherit !important
+.h-initial
+  height initial !important
+
+for i in 0..20
+  // Viewport-based height
+  .vh{i*5}
+    height multiply(i, 5vh)
+  // Percentage-based height
+  .h5{i*5}
+    height multiply(i, 5%)

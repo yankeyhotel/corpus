@@ -1,0 +1,86 @@
+//====================================================
+//  Padding
+//====================================================
+
+padding-base = 1rem
+
+for i in 0..5
+  if i == 0
+    .p{i}
+      padding (padding-base * i) !important
+    .pt{i}
+      padding-top (padding-base * i) !important
+    .pr{i}
+      padding-right (padding-base * i) !important
+    .pb{i}
+      padding-bottom (padding-base * i) !important
+    .pl{i}
+      padding-left (padding-base * i) !important
+    .ptb{i}
+      padding-top (padding-base * i) !important
+      padding-bottom @padding-top !important
+    .plr{i}
+      padding-left (padding-base * i) !important
+      padding-right @padding-left !important
+  .p{i}
+    padding (padding-base * i)
+  .pt{i}
+    padding-top (padding-base * i)
+  .pr{i}
+    padding-right: (padding-base * i)
+  .pb{i}
+    padding-bottom (padding-base * i)
+  .pl{i}
+    padding-left (padding-base * i)
+  .ptb{i}
+    padding-top (padding-base * i)
+    padding-bottom @padding-top
+  .plr{i}
+    padding-left (padding-base * i)
+    padding-right @padding-left
+
+
+//====================================================
+//  Margins
+//====================================================
+
+margin-base = 1rem
+
+// Auto
+.ma
+  margin auto
+
+for i in 0..5
+  if i == 0
+    .m{i}
+      margin (margin-base * i) !important
+    .mt{i}
+      margin-top (margin-base * i) !important
+    .mr{i}
+      margin-right (margin-base * i) !important
+    .mb{i}
+      margin-bottom (margin-base * i) !important
+    .ml{i}
+      margin-left (margin-base * i) !important
+    .mtb{i}
+      margin-top (margin-base * i) !important
+      margin-bottom @margin-top !important
+    .mlr{i}
+      margin-left (margin-base * i) !important
+      margin-right @margin-left !important
+  .m{i}
+    margin (margin-base * i)
+  .mt{i}
+    margin-top (margin-base * i)
+  .mr{i}
+    margin-right: (margin-base * i)
+  .mb{i}
+    margin-bottom (margin-base * i)
+  .ml{i}
+    margin-left (margin-base * i)
+  .mtb{i}
+    margin-top (margin-base * i)
+    margin-bottom @margin-top
+  .mlr{i}
+    margin-left (margin-base * i)
+    margin-right @margin-left

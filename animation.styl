@@ -1,0 +1,154 @@
+//====================================================
+//  Animation
+//====================================================
+
+@keyframes-name = fadeIn
+  from
+    opacity 0
+  to
+    opacity 1
+
+@keyframe-name = fadeOut
+  from
+    opacity 1
+  to
+    opacity 0
+
+@keyframe-name = fadeInUp
+  from
+    opacity 0
+    transform translateY(1.5rem)
+  to
+    opacity 1
+    transform translateY(0)
+
+@keyframe-name = fadeInDown
+  from
+    opacity 0
+    transform translateY(-1.5rem)
+  to
+    opacity 1
+    transform translateY(0)
+
+@keyframe-name = scaleUp
+  from
+    transform scale(0)
+  to
+    transform scale(1)
+
+@keyframe-name = scaleDown
+  from
+    transform scale(1)
+  to
+    transform scale(0)
+
+@keyframe-name = slideUp
+  from
+    transform translateY(25vh)
+  to
+    transform translateY(0)
+
+@keyframe-name = slideDown
+  from
+    transform translateY(-25vh)
+  to
+    transform translateY(0)
+
+@keyframe-name = slideLeft
+  from
+    transform translateX(25vh)
+  to
+    transform translateX(0)
+
+@keyframe-name = slideRight
+  from
+    transform translateX(-25vh)
+  to
+    transform translateX(0)
+
+@keyframe-name = flipIn
+  from
+    opacity 0
+    transform scaleY(0)
+  to
+    opacity 1
+    transform scaleY(1)
+
+@keyframe-name = flipOut
+  from
+    opacity 1
+    transform scaleY(1)
+  to
+    opacity 0
+    transform scaleY(0)
+
+@keyframe-name = rotateRight
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)
+
+@keyframe-name = rotateLeft
+  from
+    transform rotate(360deg)
+  to
+    transform rotate(0deg)
+
+@keyframe-name = flash
+  from
+    opacity 1
+  to
+    opacity 0.25
+
+@keyframe-name = shake
+  15%
+    transform translateX(0.5rem)
+  30%
+    transform translateX(-0.4rem)
+  45%
+    transform translateX(0.3rem)
+  60%
+    transform translateX(-0.2rem)
+  75%
+    transform translateX(0.1rem)
+  90%
+    transform translateX(0)
+  90%
+    transform translateX(0)
+
+//====================================================
+//  Animation Utility Classes
+//====================================================
+
+.fadeIn
+  animation fadeIn 500ms
+.fadeOut
+  animation fadeOut 500ms
+.fadeInUp
+  animation fadeInUp 500ms
+.fadeInDown
+  animation fadeInDown 500ms
+.slideUp
+  animation slideUp 200ms ease-in-out
+.slideDown
+  animation slideDown 200ms ease-in-out
+.slideRight
+  animation slideRight 200ms ease-in-out
+.slideLeft
+  animation slideLeft 200ms ease-in-out
+.scaleUp
+  animation scaleUp 200ms ease-in-out
+.scaleDown
+  animation scaleDown 200ms ease-in-out
+.flipIn
+  animation flipIn 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5)
+.flipOut
+  animation flipOut 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5)
+.rotateRight
+  animation rotateRight 500ms
+.rotateLeft
+  animation rotateLeft 500ms
+.flash
+  animation flash 500ms 3
+.shake
+  animation shake 200ms
