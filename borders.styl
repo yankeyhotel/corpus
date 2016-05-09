@@ -12,19 +12,27 @@ border-3 = 3px
 
 for i in 0..3
   if i == 0
-    .b{i}, .bt{i}, .br{i}, .bb{i}, .bl{i}
+    .b{i}
       border none !important
+    .bt{i}
+      border-top none !important
+    .br{i}
+      border-right none !important
+    .bb{i}
+      border-bottom none !important
+    .bl{i}
+      border-left none !important
   else
     .b{i}
-      border border-(i) border-style border-color
+      border (border- + (i)) border-style border-color
     .bt{i}
-      border-top border-(i) border-style border-color
+      border-top (border- + (i)) border-style border-color
     .br{i}
-      border-right border-(i) border-style border-color
+      border-right (border- + (i)) border-style border-color
     .bb{i}
-      border-bottom border-(i) border-style border-color
+      border-bottom (border- + (i)) border-style border-color
     .bl{i}
-      border-left border-(i) border-style border-color
+      border-left (border- + (i)) border-style border-color
 
 //====================================================
 //  Border Radius
